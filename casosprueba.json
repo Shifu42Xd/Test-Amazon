@@ -1,0 +1,359 @@
+[
+  {
+	"caso": "1.1",
+	"op": "add",
+	"val1": "9999999999",
+	"val2": "9999999999",
+	"expectedResult": "19999999998"
+  },
+  {
+	"caso": "1.2",
+	"op": "add",
+	"val1": "-999999999",
+	"val2": "-999999999",
+	"expectedResult": "-1999999998"
+  },
+  {
+	"caso": "1.3",
+	"op": "add",
+	"val1": "9999999999",
+	"val2": "-999999999",
+	"expectedResult": "9000000000"
+  },
+  {
+	"caso": "1.4",
+	"op": "add",
+	"val1": "-999999999",
+	"val2": "9999999999",
+	"expectedResult": "9000000000"
+  },
+  {
+	"caso": "2.1",
+	"op": "sub",
+	"val1": "9999999999",
+	"val2": "9999999999",
+	"expectedResult": "0"
+  },
+  {
+	"caso": "2.2",
+	"op": "sub",
+	"val1": "-999999999",
+	"val2": "-999999999",
+	"expectedResult": "0"
+  },
+  {
+	"caso": "2.3",
+	"op": "sub",
+	"val1": "9999999999",
+	"val2": "-999999999",
+	"expectedResult": "10999999998"
+  },
+  {
+	"caso": "2.4",
+	"op": "sub",
+	"val1": "-999999999",
+	"val2": "9999999999",
+	"expectedResult": "-10999999998"
+  },
+  {
+	"caso": "3.1",
+	"op": "mul",
+	"val1": "9999999999",
+	"val2": "9999999999",
+	"expectedResult": "99999999980000000000"
+  },
+  {
+	"caso": "3.2",
+	"op": "mul",
+	"val1": "-999999999",
+	"val2": "-999999999",
+	"expectedResult": "999999998000000000"
+  },
+  {
+	"caso": "3.3",
+	"op": "mul",
+	"val1": "9999999999",
+	"val2": "-999999999",
+	"expectedResult": "-9999999989000000000"
+  },
+  {
+	"caso": "3.4",
+	"op": "mul",
+	"val1": "-999999999",
+	"val2": "9999999999",
+	"expectedResult": "-9999999989000000000"
+  },
+  {
+	"caso": "4.1",
+	"op": "div",
+	"val1": "9999999999",
+	"val2": "9999999999",
+	"expectedResult": "1"
+  },
+  {
+	"caso": "4.2",
+	"op": "div",
+	"val1": "-999999999",
+	"val2": "-999999999",
+	"expectedResult": "1"
+  },
+  {
+	"caso": "4.3",
+	"op": "div",
+	"val1": "9999999999",
+	"val2": "-999999999",
+	"expectedResult": "-10"
+  },
+  {
+	"caso": "4.4",
+	"op": "div",
+	"val1": "-999999999",
+	"val2": "9999999999",
+	"expectedResult": "-0.09999999991"
+  },
+  {
+	"caso": "5",
+	"op": "add",
+	"val1": "5.25",
+	"val2": "0.2",
+	"expectedResult": "5.45"
+  },
+  {
+	"caso": "6",
+	"op": "sub",
+	"val1": "5.25",
+	"val2": "0.75",
+	"expectedResult": "4.5"
+  },
+  {
+	"caso": "7",
+	"op": "mul",
+	"val1": "5.25",
+	"val2": "3",
+	"expectedResult": "15.75"
+  },
+  {
+	"caso": "8",
+	"op": "div",
+	"val1": "5.25",
+	"val2": "3",
+	"expectedResult": "1.75"
+  },
+  {
+	"caso": "9",
+	"op": "div",
+	"val1": "9999999999",
+	"val2": "0",
+	"expectedError": "Divide by zero error!"
+  },
+  {
+	"caso": "10",
+	"op": "concatenate",
+	"val1": "9999999999",
+	"val2": "9999999999",
+	"expectedResult": "99999999999999999999"
+  },
+  {
+	"caso": "11",
+	"op": "*",
+	"val1": "",
+	"val2": "9999999999",
+	"expectedError": "Number 1 is not a number"
+  },
+  {
+	"caso": "12",
+	"op": "*",
+	"val1": "9999999999",
+	"val2": "",
+	"expectedError": "Number 2 is not a number"
+  },
+  {
+	"caso": "13.1.1",
+	"op": "add",
+	"val1": " 200 ",
+	"val2": "10",
+	"expectedResult": "210"
+  },
+  {
+	"caso": "13.1.2",
+	"op": "sub",
+	"val1": " 200 ",
+	"val2": "10",
+	"expectedResult": "190"
+  },
+  {
+	"caso": "13.1.3",
+	"op": "mul",
+	"val1": " 200 ",
+	"val2": "10",
+	"expectedResult": "2000"
+  },
+  {
+	"caso": "13.1.4",
+	"op": "div",
+	"val1": " 200 ",
+	"val2": "10",
+	"expectedResult": "20"
+  },
+  {
+	"caso": "13.2",
+	"op": "concatenate",
+	"val1": " 200 ",
+	"val2": "10",
+	"expectedResult": "20010"
+  },
+  {
+	"caso": "14.1.1",
+	"op": "add",
+	"val1": "10",
+	"val2": " 200 ",
+	"expectedResult": "210"
+  },
+  {
+	"caso": "14.1.2",
+	"op": "sub",
+	"val1": "10",
+	"val2": " 200 ",
+	"expectedResult": "-190"
+  },
+  {
+	"caso": "14.1.3",
+	"op": "div",
+	"val1": "10",
+	"val2": " 200 ",
+	"expectedResult": "0.05"
+  },
+  {
+	"caso": "14.1.4",
+	"op": "mul",
+	"val1": "10",
+	"val2": " 200 ",
+	"expectedResult": "2000"
+  },
+  {
+	"caso": "14.2",
+	"op": "concatenate",
+	"val1": "10",
+	"val2": " 200 ",
+	"expectedResult": "10200"
+  },
+  {
+	"caso": "15.1",
+	"op": ["add", "sub", "mul"],
+	"val1": "         ",
+	"val2": "",
+	"expectedError": "Number 1 is not a number"
+  },
+  {
+	"caso": "15.2",
+	"op": "div",
+	"val1": "9999999999",
+	"val2": "         ",
+	"expectedError": "Number 2 is not a number"
+  },
+  {
+	"caso": "16",
+	"op": "concatenate",
+	"val1": "         ",
+	"val2": "9999999999",
+	"expectedError": "Number 1 is not a number"
+  },
+  {
+	"caso": "17",
+	"op": "*",
+	"val1": "1,2",
+	"val2": "34",
+	"expectedError": "Number 1 is not a number"
+  },
+  {
+	"caso": "18",
+	"op": "*",
+	"val1": "9999999999",
+	"val2": "1,2",
+	"expectedError": "Number 2 is not a number"
+  },
+  {
+	"caso": "19",
+	"op": "*",
+	"val1": "true",
+	"val2": "",
+	"expectedError": "Number 1 is not a number"
+  },
+  {
+	"caso": "20",
+	"op": "*",
+	"val1": "5",
+	"val2": "false",
+	"expectedError": "Number 2 is not a number"
+  },
+  {
+	"caso": "21.1",
+	"op": ["add", "sub", "mul", "div"],
+	"val1": "null",
+	"val2": "",
+	"expectedError": "Number 1 is not a number"
+  },
+  {
+	"caso": "21.2",
+	"op": "concatenate",
+	"val1": "null",
+	"val2": "",
+	"expectedError": "Number 1 is not a number"
+  },
+  {
+	"caso": "22.1",
+	"op": ["add", "sub", "mul", "div"],
+	"val1": "5",
+	"val2": "null",
+	"expectedError": "Number 2 is not a number"
+  },
+  {
+	"caso": "22.2",
+	"op": "concatenate",
+	"val1": "10",
+	"val2": "null",
+	"expectedError": "Number 2 is not a number"
+  },
+  {
+	"caso": "23",
+	"op": "*",
+	"val1": "1e2",
+	"val2": "0",
+	"expectedError": "Number 1 is not a number"
+  },
+  {
+	"caso": "24",
+	"op": "*",
+	"val1": "9999999999",
+	"val2": "1e2",
+	"expectedError": "Number 2 is not a number"
+  },
+  {
+	"caso": "25",
+	"op": "*",
+	"val1": "0x20",
+	"val2": "0",
+	"expectedError": "Number 1 is not a number"
+  },
+  {
+	"caso": "26",
+	"op": "*",
+	"val1": "0",
+	"val2": "0x20",
+	"expectedError": "Number 2 is not a number"
+  },
+  {
+	"caso": "27",
+	"op": "*",
+	"val1": "0b01101",
+	"val2": "0",
+	"expectedError": "Number 1 is not a number"
+  },
+  {
+	"caso": "28",
+	"op": "*",
+	"val1": "9999999999",
+	"val2": "0b01101",
+	"expectedError": "Number 2 is not a number"
+  }
+]
